@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import ShoeImage from "./assets/Shoe.jpg"
 import kagurabachi from "./assets/kagurabachi.jpeg";
+import Carousell from "./assets/Carousell.jsx";   
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         </ul>
       </nav>
 <img src={ShoeImage}/>
-
+      <Carousell />
       <img src={kagurabachi}  />
 
       <Routes>
