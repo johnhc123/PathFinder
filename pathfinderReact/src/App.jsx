@@ -5,14 +5,17 @@ import Profile from "./pages/Profile";
 import ShoeImage from "./assets/Shoe.jpg"
 import kagurabachi from "./assets/kagurabachi.jpeg";
 import Carousell from "./assets/Carousell.jsx";   
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Profile from "./pages/Profile.jsx";
+import "./App.css"
 
 function App() {
   return (
     <BrowserRouter>
-    
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li className="background"><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/profile">Profile</Link></li>
         </ul>
@@ -31,4 +34,3 @@ function App() {
 }
 
 export default App;
-

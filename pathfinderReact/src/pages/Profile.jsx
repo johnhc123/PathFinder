@@ -1,5 +1,14 @@
+import AboutCard from "../assets/AboutUs.jsx";
 function Profile() {
-  return <h1>Profile Page</h1>;
-}
+  return(
+    <div>
+    <AboutCard
+    name="Zuchi"
+    quote="We are the coders!!!!"/>
+    
+    
+    </div>
+  )
+};
 
 export default Profile;
