@@ -20,24 +20,18 @@ const responsive = {
             }
             };
 
-function Carousell() {
+function Carousell({img1, img2, img3, img4, img5}) {
     return (
         <div className=" bg-green-100 ">
             
 <Carousel responsive={responsive}>
-  <div><img src={car}/></div>
-  <div><img src={car}/></div>
-  <div><img src={car}/></div>
-  <div><img src={car}/></div>
-    <div><img src={car}/></div>
+  <div><img src={img1}/></div>
+  <div><img src={img2}/></div>
+  <div><img src={img3}/></div>
+  <div><img src={img4}/></div>
+    <div><img src={img5}/></div>
 
-  <div><img src={car}/></div>
 
-  <div><img src={car}/></div>
-
-  <div><img src={car}/></div>
-
-  <div><img src={car}/></div>
 
 
 </Carousel>;
