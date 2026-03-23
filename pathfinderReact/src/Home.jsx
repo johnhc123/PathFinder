@@ -1,5 +1,5 @@
-import ShoeImage from "../assets/Shoe.jpg";
-import kagurabachi from "../assets/kagurabachi.jpeg";
+import ShoeImage from "./assets/Shoe.jpg";
+import kagurabachi from "./assets/kagurabachi.jpeg";
 
 function Home() {
   return (

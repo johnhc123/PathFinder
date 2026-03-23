@@ -1,1 +1,56 @@
   @import "tailwindcss";
+
+  body{
+    background: rgb(241, 241, 171);
+    margin-top: 50px;
+}
+nav{
+    transition: 0.25s ease-out;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 2.5%;
+  background-color: white;
+  margin: -3%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+nav:hover {
+  transition: 0.25s ease-in;
+  opacity: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+nav ul li a {
+  transition: 0.25s ease-out;
+  color: #565254;
+  display: block;
+  padding: 17.5px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #565254;
+  color: #fffbfe;
+  transition: 0.75s;
+}

@@ -1,4 +1,4 @@
-import AboutCard from "../assets/AboutUs.jsx";
+import AboutCard from "./assets/AboutUs.jsx";
 function Profile() {
   return(
     <div>

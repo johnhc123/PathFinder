@@ -1,11 +1,19 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import car from "./assets/car.gif";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Profile from "./Profile.jsx";
 import Carousell from "./assets/Carousell.jsx";   
 import kb from "./assets/kagurabachi.jpeg";
 import "./App.css"
+import BayT from "./BayT.jsx";
+import CaliforniaT from "./CaliforniaT.jsx";
+import UsaT from "./UsaT.jsx";
+import Reviews from "./Reviews.jsx";
+import WelcomeMessage from "./assets/Welcome.jsx";
+import AboutUs from "./assets/AboutUs.jsx";
+import Guide from "./Guide.jsx";
+import TripPlanner from "./TripPlanner.jsx";
 
 function App() {
   return (
@@ -15,14 +23,26 @@ function App() {
           <li className="background"><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/profile">Profile</Link></li>
+          <li><Link to="/bayt">Bay T</Link></li>
+          <li><Link to="/californiat">California T</Link></li>
+          <li><Link to="/usat">Usa T</Link></li>
+          <li><Link to="/reviews">Reviews</Link></li>
+          <li><Link to="/guide">Guide</Link></li>
+          <li><Link to="/tripplanner">Trip Planner</Link></li>
+
         </ul>
       </nav>
-      <Carousell img1={car} img2={kb} img3={car} img4={kb} img5={car}/>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/bayt" element={<BayT />} />
+        <Route path="/californiat" element={<CaliforniaT />} />
+        <Route path="/usat" element={<UsaT />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/guide" element={<Guide />} />
+        <Route path="/tripplanner" element={<TripPlanner />} />
       </Routes>
     </BrowserRouter>
   );
