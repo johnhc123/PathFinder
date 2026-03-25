@@ -1,4 +1,4 @@
-import cooltrail from "./assets/cooltrail.jpg";
+import cooltrail from "./assets/coast.jpg";
 import "react-multi-carousel/lib/styles.css";
 import Carousell from "./assets/Carousell";
 
