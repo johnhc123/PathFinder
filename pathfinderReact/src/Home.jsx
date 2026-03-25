@@ -1,12 +1,15 @@
-import ShoeImage from "./assets/Shoe.jpg";
-import kagurabachi from "./assets/kagurabachi.jpeg";
+import Carousell from "./assets/Carousell.jsx";   
+import joaq from "./assets/hike1.png";
 
 function Home() {
   return (
     <div>
-      <h1>Welcome Home</h1>
-      <img src={ShoeImage} alt="Shoe" />
-      <img src={kagurabachi} alt="Kagurabachi" />
+      <h1>Welcome to the Trail App</h1>
+      <p>Discover the best trails for hiking, biking, and more!</p>
+      <h2>Here is our favorite trail:</h2>
+      <Carousell img1={joaq} img2={joaq} img3={joaq} img4={joaq} img5={joaq}/>
+      <p>Sequoia Bayview Trail in Joaquin Miller Park</p>
+    
     </div>
   );
 }
