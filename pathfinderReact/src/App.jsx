@@ -10,6 +10,7 @@ import Reviews from "./Reviews.jsx";
 import Guide from "./Guide.jsx";
 import TripPlanner from "./TripPlanner.jsx";
 import Dropdown from "./assets/Dropdown.jsx";
+import StarFunction from "./assets/Stars.jsx"
 function App() {
   return (
     <BrowserRouter>
@@ -34,7 +35,7 @@ function App() {
           trail2="Eagle's Trek Trail"
           trail3="Fisherman's War Trail"/>
           <br></br>
-          
+          <StarFunction/>
       
       <Routes>
         <Route path="/" element={<Home />} />
