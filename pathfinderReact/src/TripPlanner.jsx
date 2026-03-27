@@ -6,6 +6,8 @@ function TripPlanner() {
     <AboutCard
     name="Trip Planner!"
     quote="Here you can create custom trip itineraries!"/></div>;
-}
+   <TrailSelectionformCard
+    
+  }
 
 export default TripPlanner;
