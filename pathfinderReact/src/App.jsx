@@ -1,20 +1,16 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import car from "./assets/car.gif";
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Profile from "./Profile.jsx";
-import Carousell from "./assets/Carousell.jsx";   
-import kb from "./assets/kagurabachi.jpeg";
 import "./App.css"
 import BayT from "./BayT.jsx";
 import CaliforniaT from "./CaliforniaT.jsx";
 import UsaT from "./UsaT.jsx";
 import Reviews from "./Reviews.jsx";
-import WelcomeMessage from "./assets/Welcome.jsx";
-import AboutUs from "./assets/AboutUs.jsx";
 import Guide from "./Guide.jsx";
 import TripPlanner from "./TripPlanner.jsx";
-
+import Dropdown from "./assets/Dropdown.jsx";
+import StarFunction from "./assets/Stars.jsx"
 function App() {
   return (
     <BrowserRouter>
@@ -31,8 +27,16 @@ function App() {
           <li><Link to="/tripplanner">Trip Planner</Link></li>
 
         </ul>
+        
       </nav>
-
+<Dropdown
+          title="Trending Trails"
+          trail1="Sinking Mud Trail"
+          trail2="Eagle's Trek Trail"
+          trail3="Fisherman's War Trail"/>
+          <br></br>
+          <StarFunction/>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
