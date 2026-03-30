@@ -4,15 +4,18 @@ import joaq2 from "./assets/hike12.png";
 import joaq3 from "./assets/hike13.png";
 import joaq4 from "./assets/hike14.png";
 import joaq5 from "./assets/hike15.png";
+import Title from "./assets/title.jsx";
 
 
 function Home() {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center my-8">Welcome to the Trail App</h1>
-      <p>Discover the best trails for hiking, biking, and more!</p>
-      <h2>Here is our favorite trail:</h2>
+      <Title title="Welcome to the Trail App" subtitle="Discover the best trails for hiking, biking, and more!" />
+      <br></br>
+      <Title title = "Featured Trail: Sequoia Bayview Trail" subtitle="Experience breathtaking views of the San Francisco Bay and the city skyline on this scenic trail in Joaquin Miller Park." />
+      <br></br>
       <Carousell img1={joaq1} img2={joaq2} img3={joaq3} img4={joaq4} img5={joaq5}/>
+
       <p>Sequoia Bayview Trail in Joaquin Miller Park</p>
     
     </div>

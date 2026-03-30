@@ -11,6 +11,8 @@ import Guide from "./Guide.jsx";
 import TripPlanner from "./TripPlanner.jsx";
 import Dropdown from "./assets/Dropdown.jsx";
 import StarFunction from "./assets/Stars.jsx"
+import Title from "./assets/title.jsx";
+
 function App() {
   return (
     <BrowserRouter>
