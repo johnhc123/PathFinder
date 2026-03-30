@@ -1,5 +1,5 @@
 import AboutCard from "./assets/AboutUs.jsx";
-import Title from "./assets/title.jsx";
+import Title from "./assets/Title.jsx";
 
 
 function About() {
