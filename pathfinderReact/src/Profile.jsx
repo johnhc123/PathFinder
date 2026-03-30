@@ -3,7 +3,7 @@ import ZuchiImg from "./assets/zuchi.png";
 import JonImg from "./assets/jon.jpg";
 function Profile() {
   return(
-    <div>
+    <div class ="content-evenly grid">
     <AboutCard
     name="Zuchi"
     quote="We are the coders!!!!"
