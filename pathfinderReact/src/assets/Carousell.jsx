@@ -24,12 +24,12 @@ function Carousell({img1, img2, img3, img4, img5}) {
     return (
         <div className=" bg-green-100 ">
             
-<Carousel responsive={responsive}>
-  <div><img src={img1}/></div>
-  <div><img src={img2}/></div>
-  <div><img src={img3}/></div>
-  <div><img src={img4}/></div>
-    <div><img src={img5}/></div>
+<Carousel responsive={responsive} itemClass="px-1">
+  <div><img src={img1} className="w-80 h-80 object-cover rounded-lg"/></div>
+  <div><img src={img2} className="w-80 h-80 object-cover rounded-lg"/></div>
+  <div><img src={img3} className="w-80 h-80 object-cover rounded-lg"/></div>
+  <div><img src={img4} className="w-80 h-80 object-cover rounded-lg"/></div>
+    <div><img src={img5} className="w-80 h-80 object-cover rounded-lg"/></div>
 
 
 
