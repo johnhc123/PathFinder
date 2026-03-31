@@ -6,12 +6,12 @@ import cooltrail from "./assets/cooltrail.jpg";
 
 function Guide() {
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen p-8">
       <Title title="Hiking Guide" subtitle="Everything you need to know for a safe and enjoyable hike" />
       <br></br>
       <div className="max-w-6xl mx-auto space-y-12">
           <Title title="Preparation" subtitle="Get ready for your adventure" />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-32">
             <Card
               title="Essential Gear"
               description="Must bring water, snacks, first-aid kit, map, and appropriate clothing for the weather."
@@ -37,7 +37,7 @@ function Guide() {
             <div className="bg-white rounded-2xl shadow-md p-6">
               <img src={cooltrail} alt="Mountain trail" className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-xl font-bold mb-2">Emergency Preparedness</h3>
-              <p className="text-gray-600 mb-4">Know basic first aid, carry a charged phone, and have emergency contacts saved.</p>
+              <p className="text-gray-600 mb-4">Know basic first aid, be aware of what trail you are on, carry a charged phone, and have emergency contacts saved.</p>
               <Stars />
             </div>
           </div>

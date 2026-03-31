@@ -32,15 +32,17 @@ function TripPlanner() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen p-8">
       <Title title="Trip Planner" subtitle="Plan your perfect outdoor adventure" />
-
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="flex justify-center m-8">
         {/* Introduction */}
+        
         <Card
           title="Create Your Dream Trip"
           description="Use our trip planner to customize itineraries, select trails, and organize your outdoor adventures!"
         />
+        </div>
+              <div className="max-w-6xl mx-auto space-y-8 p-8">
 
         {/* Trip Form */}
         <div className="bg-white rounded-2xl shadow-md p-6">
@@ -61,7 +63,7 @@ function TripPlanner() {
         {/* Trip Tips */}
         <section>
           <Title title="Planning Tips" subtitle="Make the most of your trip" />
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 place-items-center p-8">
             <Card
               title="Weather Considerations"
               description="Check forecasts and pack layers. Weather can be unpredictable in outdoor environments."

@@ -60,10 +60,10 @@ function Reviews() {
   const averageRating = reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen p-8">
       <Title title="Hiker Reviews" subtitle="Real experiences from our trail community" />
 
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="max-w-6xl mx-auto space-y-8 p-8">
         {/* Rating Summary */}
         <div className="bg-white rounded-2xl shadow-md p-6 text-center">
           <h2 className="text-2xl font-bold mb-4">Overall Rating</h2>

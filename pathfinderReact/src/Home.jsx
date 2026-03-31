@@ -16,7 +16,6 @@ function Home() {
       <br></br>
       <Carousell img1={joaq1} img2={joaq2} img3={joaq3} img4={joaq4} img5={joaq5}/>
 
-      <p>Sequoia Bayview Trail in Joaquin Miller Park</p>
     
     </div>
   );

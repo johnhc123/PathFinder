@@ -53,10 +53,10 @@ function BayT() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen p-8">
       <Title title="Bay Area Trails" subtitle="Explore the diverse hiking spots around the San Francisco Bay" />
 
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="max-w-6xl mx-auto space-y-8 p-8">
         {/* Featured Carousel */}
         <section>
           <Title title="Bay Area Highlights" subtitle="Iconic trails and hidden gems" />

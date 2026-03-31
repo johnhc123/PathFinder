@@ -9,9 +9,7 @@ import UsaT from "./UsaT.jsx";
 import Reviews from "./Reviews.jsx";
 import Guide from "./Guide.jsx";
 import TripPlanner from "./TripPlanner.jsx";
-import Dropdown from "./assets/Dropdown.jsx";
-import StarFunction from "./assets/Stars.jsx"
-import Title from "./assets/Title.jsx";
+
 
 function App() {
   return (
@@ -31,13 +29,6 @@ function App() {
         </ul>
         
       </nav>
-<Dropdown
-          title="Trending Trails"
-          trail1="Sinking Mud Trail"
-          trail2="Eagle's Trek Trail"
-          trail3="Fisherman's War Trail"/>
-          <br></br>
-          <StarFunction/>
       
       <Routes>
         <Route path="/" element={<Home />} />

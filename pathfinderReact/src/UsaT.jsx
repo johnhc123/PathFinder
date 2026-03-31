@@ -55,10 +55,10 @@ function UsaT() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen p-8">
       <Title title="USA Trails" subtitle="Discover amazing hiking trails across America" />
 
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="max-w-6xl mx-auto space-y-8 p-8">
         {/* Featured Carousel */}
         <section>
           <Title title="Featured Trails" subtitle="Iconic routes that define American hiking" />
