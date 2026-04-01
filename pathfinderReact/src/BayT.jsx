@@ -57,24 +57,17 @@ function BayT() {
       <Title title="Bay Area Trails" subtitle="Explore the diverse hiking spots around the San Francisco Bay" />
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
-        {/* Featured Carousel */}
-        <section>
           <Title title="Bay Area Highlights" subtitle="Iconic trails and hidden gems" />
           <Carousell img1={coast} img2={cooltrail} img3={path} img4={hike1} img5={hike2} />
-        </section>
 
-        {/* Trail Grid */}
-        <section>
           <Title title="Popular Trails" subtitle="From urban parks to wilderness areas" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {bayTrails.map((trail, index) => (
               <TrailCard key={index} {...trail} />
             ))}
           </div>
-        </section>
 
-        {/* Local Tips */}
-        <section>
+
           <Title title="Bay Area Hiking Tips" subtitle="Navigate the unique terrain and weather" />
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-2xl shadow-md p-6">
@@ -86,7 +79,6 @@ function BayT() {
               <p className="text-gray-600">Many trails are accessible by BART, buses, or ferries. Check schedules for return trips.</p>
             </div>
           </div>
-        </section>
       </div>
     </div>
   );

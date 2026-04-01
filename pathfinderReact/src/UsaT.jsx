@@ -59,24 +59,16 @@ function UsaT() {
       <Title title="USA Trails" subtitle="Discover amazing hiking trails across America" />
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
-        {/* Featured Carousel */}
-        <section>
           <Title title="Featured Trails" subtitle="Iconic routes that define American hiking" />
           <Carousell img1={hike1} img2={hike2} img3={hike3} img4={hike4} img5={hike5} />
-        </section>
 
-        {/* Trail Grid */}
-        <section>
           <Title title="Explore Trails" subtitle="Find your perfect adventure" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {usaTrails.map((trail, index) => (
               <TrailCard key={index} {...trail} />
             ))}
           </div>
-        </section>
 
-        {/* Trail Tips */}
-        <section>
           <Title title="Planning Your USA Adventure" subtitle="Essential tips for long-distance hiking" />
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-2xl shadow-md p-6">
@@ -88,7 +80,6 @@ function UsaT() {
               <p className="text-gray-600">Summer (June-August) for most trails, but spring and fall offer milder weather in many regions.</p>
             </div>
           </div>
-        </section>
       </div>
     </div>
   );

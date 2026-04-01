@@ -74,18 +74,13 @@ function Reviews() {
           <p className="text-gray-600">Based on {reviews.length} reviews</p>
         </div>
 
-        {/* Reviews Grid */}
-        <section>
           <Title title="Recent Reviews" subtitle="What hikers are saying about their experiences" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reviews.map((review, index) => (
               <ReviewCard key={index} {...review} />
             ))}
           </div>
-        </section>
 
-        {/* Call to Action */}
-        <section className="text-center">
           <div className="bg-green-50 rounded-2xl p-8">
             <h3 className="text-xl font-bold mb-4">Share Your Experience</h3>
             <p className="text-gray-600 mb-4">Have you hiked with us? We'd love to hear about your adventure!</p>
@@ -93,7 +88,6 @@ function Reviews() {
               Write a Review
             </button>
           </div>
-        </section>
       </div>
     </div>
   );

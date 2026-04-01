@@ -68,24 +68,19 @@ function CaliforniaT() {
       
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
-        {/* Featured Carousel */}
-        <section>
+
           <Title title="California Icons" subtitle="World-famous trails and natural wonders" />
           <Carousell img1={hike1} img2={hike2} img3={hike3} img4={hike4} img5={hike5} />
-        </section>
 
-        {/* Trail Grid */}
-        <section>
+
           <Title title="Explore California" subtitle="Trails from desert to redwoods" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {californiaTrails.map((trail, index) => (
               <TrailCard key={index} {...trail} />
             ))}
           </div>
-        </section>
 
-        {/* California Tips */}
-        <section>
+
           <Title title="California Hiking Guide" subtitle="Navigate the Golden State's diverse terrain" />
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-2xl shadow-md p-6">
@@ -97,7 +92,6 @@ function CaliforniaT() {
               <p className="text-gray-600">Popular parks like Yosemite and Joshua Tree require day-use or overnight permits. Book well in advance.</p>
             </div>
           </div>
-        </section>
       </div>
     </div>
   );

@@ -35,7 +35,6 @@ function TripPlanner() {
     <div className="min-h-screen p-8">
       <Title title="Trip Planner" subtitle="Plan your perfect outdoor adventure" />
       <div className="flex justify-center m-8">
-        {/* Introduction */}
         
         <Card
           title="Create Your Dream Trip"
@@ -44,24 +43,18 @@ function TripPlanner() {
         </div>
               <div className="max-w-6xl mx-auto space-y-8 p-8">
 
-        {/* Trip Form */}
         <div className="bg-white rounded-2xl shadow-md p-6">
           <h2 className="text-2xl font-bold mb-4">Plan Your Trip</h2>
           <TrailForm />
         </div>
 
-        {/* Sample Trips */}
-        <section>
           <Title title="Popular Trip Ideas" subtitle="Get inspired by these curated adventures" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {sampleTrips.map((trip, index) => (
               <TripCard key={index} {...trip} />
             ))}
           </div>
-        </section>
 
-        {/* Trip Tips */}
-        <section>
           <Title title="Planning Tips" subtitle="Make the most of your trip" />
           <div className="grid grid-cols-2 place-items-center p-8">
             <Card
@@ -73,7 +66,6 @@ function TripPlanner() {
               description="Coordinate with your group, share responsibilities, and establish meeting points."
             />
           </div>
-        </section>
       </div>
     </div>
   );
