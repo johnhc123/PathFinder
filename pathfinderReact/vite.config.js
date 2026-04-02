@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'    // <-- ADD THIS
  
 export default defineConfig({
   plugins: [react(), tailwindcss()],   
- base: '/pathfinderReact' // <-- ADD 
+ base: 'PathFinder/pathfinderReact' // <-- ADD 
 })
