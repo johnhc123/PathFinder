@@ -14,7 +14,7 @@ import TripPlanner from "./TripPlanner.jsx";
 function App() {
   return (
     
-    <BrowserRouter basename="/pathfinderReact/">
+    <BrowserRouter>
       <nav>
         <ul>
           <li className="background"><Link to="/">Home</Link></li>
