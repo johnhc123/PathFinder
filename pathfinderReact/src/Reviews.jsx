@@ -64,12 +64,12 @@ function Reviews() {
       <Title title="Hiker Reviews" subtitle="Real experiences from our trail community" />
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
-        {/* Rating Summary */}
         <div className="bg-white rounded-2xl shadow-md p-6 text-center">
           <h2 className="text-2xl font-bold mb-4">Overall Rating</h2>
           <div className="flex items-center justify-center mb-2">
-            <Stars />
-            <span className="ml-3 text-xl font-semibold">{averageRating.toFixed(1)} out of 5</span>
+            <span className="place-items-center"><Stars /></span>
+            
+            <span className="ml-3 text-xl font-semibold ">{averageRating.toFixed(1)} out of 5</span>
           </div>
           <p className="text-gray-600">Based on {reviews.length} reviews</p>
         </div>
@@ -81,11 +81,11 @@ function Reviews() {
             ))}
           </div>
 
-          <div className="bg-green-50 rounded-2xl p-8">
-            <h3 className="text-xl font-bold mb-4">Share Your Experience</h3>
-            <p className="text-gray-600 mb-4">Have you hiked with us? We'd love to hear about your adventure!</p>
-            <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-              Write a Review
+          <div className="bg-green-50 rounded-2xl p-8 text-center">
+            <h3 className="text-xl font-bold mb-4 ">Share Your Experience</h3>
+            <p className="text-gray-600 mb-4 ">Have you hiked with us? We'd love to hear about your adventure!</p>
+            <button className=" bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors ">
+              Write a Review!
             </button>
           </div>
       </div>
