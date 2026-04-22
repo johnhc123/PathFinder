@@ -63,8 +63,8 @@ function Reviews() {
     <div className="min-h-screen p-8">
       <Title title="Hiker Reviews" subtitle="Real experiences from our trail community" />
 
-      <div className="max-w-6xl mx-auto space-y-8 p-8">
-        <div className="bg-white rounded-2xl shadow-md p-6 text-center">
+      <div className="max-w-6xl mx-auto space-y-8 p-6">
+        <div className="bg-white rounded-2xl shadow-md p-10 text-center">
           <h2 className="text-2xl font-bold mb-4">Overall Rating</h2>
           <div className="flex items-center justify-center mb-2">
             <span className="place-items-center"><Stars /></span>

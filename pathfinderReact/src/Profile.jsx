@@ -5,8 +5,8 @@ import JulianImg from "./assets/julian.png"
 import Title from "./assets/Title.jsx";
 function Profile() {
   return(
-    <div class ="content-evenly grid">
-  <Title className="text-4xl font-bold text-center my-8"
+    <div class ="content-evenly grid p-8">
+  <Title className="text-4xl font-bold text-center space-y-8 p-8"
   title= "Meet the Team"
   subtitle= "We are a group of three friends who love hiking and exploring the outdoors. We created this app to share our passion for trails and help others discover new adventures. We hope you enjoy using our app as much as we enjoyed creating it!" />
   <br></br>

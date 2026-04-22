@@ -9,9 +9,9 @@ function About() {
   //   name="Trail Group"
   //   quote="We are the coders Zuchi Julian Jonathan!!!!"/></div>;
 
-  return <div>
+  return  <div className="min-h-screen p-8">
 
-  <Title title="What we do" subtitle="We help people discover the best hiking trails locally and nationally while maintaining high standards of safety and environmental responsibility." />]
+  <Title title="What we do" subtitle="We help people discover the best hiking trails locally and nationally while maintaining high standards of safety and environmental responsibility." />
   <br></br>
   <Title title="Our Mission" subtitle="Our mission is to provide a comprehensive and user-friendly platform for outdoor enthusiasts to discover and explore hiking trails, fostering a community of nature lovers and promoting environmental stewardship." />
   </div>
