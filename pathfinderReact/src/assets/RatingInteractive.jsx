@@ -12,7 +12,7 @@ import zuchi from "./zuchi.png";
         e.preventDefault();
         const newReview = {
             name,
-            rating: parseInt(rating),
+            rating: (rating),
             review,
             picture: zuchi,
             trail,
