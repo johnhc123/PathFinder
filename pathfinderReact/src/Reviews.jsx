@@ -4,11 +4,12 @@ import Stars from "./assets/Stars.jsx";
 import jon from "./assets/jon.jpg";
 import julian from "./assets/julian.png";
 import zuchi from "./assets/zuchi.png";
-
+import RatingInteractive from "./assets/RatingInteractive.jsx";
+import { useState } from "react";
 function Reviews() {
-  const reviews = [
+  const [reviews, setReviews] = useState([
     {
-      name: "Jonathan Chen",
+      name: "Jay Chen",
       rating: 5,
       review: "Absolutely amazing app! The trail recommendations are spot-on and the community reviews helped me choose the perfect hike for my family. The Sequoia Bayview Trail was incredible - we'll definitely be back!",
       picture: jon,
@@ -55,7 +56,11 @@ function Reviews() {
       trail: "Half Dome Trail",
       date: "October 2025"
     }
-  ];
+  ]);
+
+  const addReview = (newReview) => {
+    setReviews([newReview, ...reviews]);
+  };
 
   const averageRating = reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
 
@@ -81,13 +86,7 @@ function Reviews() {
             ))}
           </div>
 
-          <div className="bg-green-50 rounded-2xl p-8 text-center">
-            <h3 className="text-xl font-bold mb-4 ">Share Your Experience</h3>
-            <p className="text-gray-600 mb-4 ">Have you hiked with us? We'd love to hear about your adventure!</p>
-            <button className=" bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors ">
-              Write a Review!
-            </button>
-          </div>
+          <RatingInteractive onAddReview={addReview} />
       </div>
     </div>
   );
