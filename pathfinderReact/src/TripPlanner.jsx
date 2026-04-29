@@ -2,9 +2,10 @@ import Card from "./assets/Card.jsx";
 import TrailForm from "./assets/TrailSelectform.jsx";
 import TripCard from "./assets/TripCard.jsx";
 import Title from "./assets/Title.jsx";
+import { useState } from "react";
 
 function TripPlanner() {
-  const sampleTrips = [
+  const [trips, setTrips] = useState([
     {
       title: "Coastal Adventure",
       date: "March 15, 2026",
@@ -29,7 +30,15 @@ function TripPlanner() {
       difficulty: "Easy",
       activities: ["Nature walks", "Bird watching", "Picnicking", "Tree climbing"]
     }
-  ];
+  ]);
+
+  const addTrip = (newTrip) => {
+    setTrips([newTrip, ...trips]);
+  };
+
+  const deleteTrip = (index) => {
+    setTrips(trips.filter((_, i) => i !== index));
+  };
 
   return (
     <div className="min-h-screen p-8">
@@ -45,14 +54,18 @@ function TripPlanner() {
 
         <div className="bg-white rounded-2xl shadow-md p-6">
           <h2 className="text-2xl font-bold mb-4">Plan Your Trip</h2>
-          <TrailForm />
+          <TrailForm onAddTrip={addTrip} />
         </div>
 
-          <Title title="Popular Trip Ideas" subtitle="Get inspired by these curated adventures" />
+          <Title title="Your Trips" subtitle="Manage your planned adventures" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sampleTrips.map((trip, index) => (
-              <TripCard key={index} {...trip} />
-            ))}
+            {trips.length === 0 ? (
+              <p className="text-gray-500 col-span-full text-center">No trips yet. Add one above!</p>
+            ) : (
+              trips.map((trip, index) => (
+                <TripCard key={index} {...trip} onDelete={() => deleteTrip(index)} />
+              ))
+            )}
           </div>
 
           <Title title="Planning Tips" subtitle="Make the most of your trip" />

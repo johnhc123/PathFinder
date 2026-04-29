@@ -1,6 +1,9 @@
-function TripCard({ title, date, location, activities, duration, difficulty }) {
+function TripCard({ title, date, location, activities, duration, difficulty, onDelete }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 w-full max-w-md hover:shadow-xl transition-all duration-200">
+    <div className="bg-white rounded-2xl shadow-md p-6 w-full max-w-md hover:shadow-xl transition-all duration-200 relative">
+      {onDelete && (
+        <button onClick={onDelete} className="absolute top-2 right-2 text-red-500 hover:text-red-700 text-xl">×</button>
+      )}
       <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
       <div className="space-y-2 text-gray-600">
         <p><span className="font-semibold">Date:</span> {date}</p>
