@@ -60,10 +60,17 @@ function BayT() {
           <Title title="Bay Area Highlights" subtitle="Iconic trails and hidden gems" />
           <Carousell img1={coast} img2={cooltrail} img3={path} img4={hike1} img5={hike2} />
 
-          <Title title="Popular Trails" subtitle="From urban parks to wilderness areas" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {bayTrails.map((trail, index) => (
-              <TrailCard key={index} {...trail} />
+              <TrailCard 
+                key={trail.name} 
+                name={trail.name} 
+                location={trail.location} 
+                difficulty={trail.difficulty} 
+                length={trail.length} 
+                description={trail.description} 
+                image={trail.image} 
+              />
             ))}
           </div>
 
