@@ -2,7 +2,7 @@ import Title from "./assets/Title.jsx";
 import TrailCard from "./assets/TrailCard.jsx";
 import Carousell from "./assets/Carousell";
 import AppTrail from "./assets/AppTrail.jpg";
-import PacificTrail from "./assets/Pacific.jpg";
+import PacificTrail from "./assets/PacificTrail.jpg";
 import JohnTrail from "./assets/JohnTrail.jpg";
 import AngelTrail from "./assets/AngelTrail.jpg";
 import HalfDome from "./assets/HalfDome.jpg"
