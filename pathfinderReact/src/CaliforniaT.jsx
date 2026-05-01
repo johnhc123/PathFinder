@@ -4,12 +4,12 @@ import Carousell from "./assets/Carousell";
 import coast from "./assets/coast.jpg";
 import cooltrail from "./assets/cooltrail.jpg";
 import path from "./assets/path.jpg";
-import hike1 from "./assets/hike1.png";
-import hike2 from "./assets/hike12.png";
-import hike3 from "./assets/hike13.png";
-import hike4 from "./assets/hike14.png";
-import hike5 from "./assets/hike15.png";
-
+import Yosemite from "./assets/Yosemite.jpg";
+import HalfDome from "./assets/HalfDome.jpg";
+import MistTrail from "./assets/MistTrail.jpg";
+import Torrey from "./assets/Torrey.jpg";
+import MtWhitney from "./assets/MtWhitney.jpg"
+import Tahoe from "./assets/Tahoe.jpg"
 function CaliforniaT() {
   const californiaTrails = [
     {
@@ -18,7 +18,7 @@ function CaliforniaT() {
       difficulty: "Moderate",
       length: "7 miles round trip",
       description: "Hike to the base of North America's tallest waterfall, with stunning views and mist along the way.",
-      image: cooltrail
+      image: Yosemite
     },
     {
       name: "Half Dome Trail",
@@ -26,7 +26,7 @@ function CaliforniaT() {
       difficulty: "Difficult",
       length: "14-16 miles round trip",
       description: "Strenuous climb to the base of Half Dome with panoramic valley views.",
-      image: hike1
+      image: HalfDome
     },
     {
       name: "Mist Trail",
@@ -34,7 +34,7 @@ function CaliforniaT() {
       difficulty: "Moderate",
       length: "3 miles round trip",
       description: "Iconic trail to Vernal Fall with spectacular waterfalls and granite cliffs.",
-      image: hike2
+      image: MistTrail
     },
     {
       name: "Torrey Pines State Beach",
@@ -42,7 +42,7 @@ function CaliforniaT() {
       difficulty: "Easy",
       length: "2.5 miles",
       description: "Coastal trail through rare Torrey pine forest with ocean views and beach access.",
-      image: coast
+      image: Torrey
     },
     {
       name: "Mount Whitney Trail",
@@ -50,7 +50,7 @@ function CaliforniaT() {
       difficulty: "Difficult",
       length: "22 miles round trip",
       description: "America's highest peak at 14,505 feet. Requires permits and preparation.",
-      image: path
+      image: MtWhitney
     },
     {
       name: "Tahoe Rim Trail",
@@ -58,7 +58,7 @@ function CaliforniaT() {
       difficulty: "Moderate",
       length: "165 miles total",
       description: "Scenic trail around Lake Tahoe with alpine meadows and lake views.",
-      image: hike3
+      image: Tahoe
     }
   ];
 
@@ -70,7 +70,7 @@ function CaliforniaT() {
       <div className="max-w-6xl mx-auto space-y-8 p-8">
 
           <Title title="California Icons" subtitle="World-famous trails and natural wonders" />
-          <Carousell img1={hike1} img2={hike2} img3={hike3} img4={hike4} img5={hike5} />
+          <Carousell img1={Yosemite} img2={MistTrail} img3={Torrey} img4={MtWhitney} img5={Tahoe} />
 
 
           <Title title="Explore California" subtitle="Trails from desert to redwoods" />

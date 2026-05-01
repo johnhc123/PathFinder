@@ -1,12 +1,11 @@
 import Title from "./assets/Title.jsx";
 import TrailCard from "./assets/TrailCard.jsx";
 import Carousell from "./assets/Carousell";
-import coast from "./assets/coast.jpg";
-import cooltrail from "./assets/cooltrail.jpg";
-import path from "./assets/path.jpg";
-import hike1 from "./assets/hike1.png";
-import hike2 from "./assets/hike12.png";
-import hike3 from "./assets/hike13.png";
+import LostTrail from "./assets/LostTrail.jpg";
+import Reyes from "./assets/Reyes.jpg";
+import Tilden from "./assets/Tilden.jpg";
+import Talampais from "./assets/MtTamalpais.jpg";
+import Sequoia from "./assets/Sequoia.png";
 
 function BayT() {
   const bayTrails = [
@@ -16,7 +15,7 @@ function BayT() {
       difficulty: "Easy",
       length: "2.5 miles",
       description: "Scenic trail with bay views, redwoods, and seasonal wildflowers. Perfect for families.",
-      image: coast
+      image: Sequoia
     },
     {
       name: "Inspiration Point Trail",
@@ -24,7 +23,7 @@ function BayT() {
       difficulty: "Moderate",
       length: "3.2 miles round trip",
       description: "Steep climb to panoramic views of the entire Bay Area and San Francisco skyline.",
-      image: cooltrail
+      image: Tilden
     },
     {
       name: "Stream Trail",
@@ -32,7 +31,7 @@ function BayT() {
       difficulty: "Easy",
       length: "1.5 miles",
       description: "Peaceful trail along a seasonal stream through coastal prairie and forest.",
-      image: path
+      image: Reyes
     },
     {
       name: "Steep Ravine Trail",
@@ -40,7 +39,7 @@ function BayT() {
       difficulty: "Moderate",
       length: "2.8 miles round trip",
       description: "Challenging hike through redwoods to a cascading waterfall.",
-      image: hike1
+      image: Talampais
     },
     {
       name: "Lost Trail",
@@ -48,7 +47,7 @@ function BayT() {
       difficulty: "Easy",
       length: "1.8 miles",
       description: "Easy loop trail around the island with views of San Francisco and the bay.",
-      image: hike2
+      image: LostTrail
     }
   ];
 
@@ -58,7 +57,7 @@ function BayT() {
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
           <Title title="Bay Area Highlights" subtitle="Iconic trails and hidden gems" />
-          <Carousell img1={coast} img2={cooltrail} img3={path} img4={hike1} img5={hike2} />
+          <Carousell img1={Talampais} img2={Sequoia} img3={Tilden} img4={Reyes} img5={LostTrail} />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {bayTrails.map((trail, index) => (

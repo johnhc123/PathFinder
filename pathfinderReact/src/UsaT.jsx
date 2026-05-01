@@ -1,14 +1,11 @@
 import Title from "./assets/Title.jsx";
 import TrailCard from "./assets/TrailCard.jsx";
 import Carousell from "./assets/Carousell";
-import hike1 from "./assets/hike1.png";
-import hike2 from "./assets/hike12.png";
-import hike3 from "./assets/hike13.png";
-import hike4 from "./assets/hike14.png";
-import hike5 from "./assets/hike15.png";
-import coast from "./assets/coast.jpg";
-import cooltrail from "./assets/cooltrail.jpg";
-import path from "./assets/path.jpg";
+import AppTrail from "./assets/AppTrail.jpg";
+import Pacific from "./assets/Pacific.jpg";
+import JohnTrail from "./assets/JohnTrail.jpg";
+import AngelTrail from "./assets/AngelTrail.jpg";
+import HalfDome from "./assets/HalfDome.jpg"
 
 function UsaT() {
   const usaTrails = [
@@ -18,7 +15,7 @@ function UsaT() {
       difficulty: "Difficult",
       length: "2,190 miles",
       description: "One of the longest continuously marked footpaths in the world, stretching from Georgia to Maine.",
-      image: path
+      image: AppTrail
     },
     {
       name: "Pacific Crest Trail",
@@ -26,7 +23,7 @@ function UsaT() {
       difficulty: "Difficult",
       length: "2,650 miles",
       description: "A long-distance hiking and equestrian trail along the highest portions of the Sierra Nevada and Cascade mountains.",
-      image: cooltrail
+      image: Pacific
     },
     {
       name: "John Muir Trail",
@@ -34,7 +31,7 @@ function UsaT() {
       difficulty: "Difficult",
       length: "211 miles",
       description: "A long-distance trail in the Sierra Nevada mountain range of California, passing through Yosemite.",
-      image: coast
+      image: JohnTrail
     },
     {
       name: "Bright Angel Trail",
@@ -42,7 +39,7 @@ function UsaT() {
       difficulty: "Moderate",
       length: "12 miles round trip",
       description: "A popular hiking trail that descends into the Grand Canyon from the South Rim.",
-      image: hike1
+      image: AngelTrail
     },
     {
       name: "Half Dome Trail",
@@ -50,7 +47,7 @@ function UsaT() {
       difficulty: "Difficult",
       length: "14-16 miles round trip",
       description: "A strenuous hike to the base of Half Dome in Yosemite National Park.",
-      image: hike2
+      image: HalfDome
     }
   ];
 
@@ -60,7 +57,7 @@ function UsaT() {
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
           <Title title="Featured Trails" subtitle="Iconic routes that define American hiking" />
-          <Carousell img1={hike1} img2={hike2} img3={hike3} img4={hike4} img5={hike5} />
+          <Carousell img1={AppTrail} img2={Pacific} img3={AngelTrail} img4={JohnTrail} img5={HalfDome} />
 
           <Title title="Explore Trails" subtitle="Find your perfect adventure" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
