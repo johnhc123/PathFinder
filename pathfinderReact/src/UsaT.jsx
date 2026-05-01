@@ -2,7 +2,7 @@ import Title from "./assets/Title.jsx";
 import TrailCard from "./assets/TrailCard.jsx";
 import Carousell from "./assets/Carousell";
 import AppTrail from "./assets/AppTrail.jpg";
-import Pacific from "./assets/Pacific.jpg";
+import PacificTrail from "./assets/Pacific.jpg";
 import JohnTrail from "./assets/JohnTrail.jpg";
 import AngelTrail from "./assets/AngelTrail.jpg";
 import HalfDome from "./assets/HalfDome.jpg"
@@ -23,7 +23,7 @@ function UsaT() {
       difficulty: "Difficult",
       length: "2,650 miles",
       description: "A long-distance hiking and equestrian trail along the highest portions of the Sierra Nevada and Cascade mountains.",
-      image: Pacific
+      image: PacificTrail
     },
     {
       name: "John Muir Trail",
@@ -57,7 +57,7 @@ function UsaT() {
 
       <div className="max-w-6xl mx-auto space-y-8 p-8">
           <Title title="Featured Trails" subtitle="Iconic routes that define American hiking" />
-          <Carousell img1={AppTrail} img2={Pacific} img3={AngelTrail} img4={JohnTrail} img5={HalfDome} />
+          <Carousell img1={AppTrail} img2={PacificTrail} img3={AngelTrail} img4={JohnTrail} img5={HalfDome} />
 
           <Title title="Explore Trails" subtitle="Find your perfect adventure" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
